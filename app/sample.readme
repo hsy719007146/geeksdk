@@ -68,3 +68,24 @@ RxPermissions
          }
 
     使用: 详见github
+
+CommonLibrary
+    依赖：okhttp3
+    配置：
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.3.0'
+        compile 'com.squareup.okhttp3:okhttp:3.0.1'
+        compile 'com.google.code.gson:gson:2.5'
+        compile 'org.ow2.util.base64:base64:2.0.0'
+    }
+    主要包括:一些常用工具类
+    AESUtils ，ArithUtils， Base64Utils，BitmapUtils，CommonUtils，DateUtils
+    DeviceUtils，EncryptionUtils，FileUtils，JsonUtils，JudgeUtils，KeyBoadUtils
+    LogFileUtils，LogUtils，PhoneUtils，RSAUtils，SharePreferenceUtil，StringUtils
+    ToastUtils，ViewUtils
+    使用：直接使用各个类里的方法。
+
+    网络请求类 使用：继承或直接实例化BaseRemoteModel 使用其方法 详见github

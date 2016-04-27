@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //权限框架
         bindClick(R.id.rxpermissions,new RxPermissionsSampleFragment());
-
+        //
+        bindClick(R.id.common_net,new CommonSampleFragment());
 
 
 
